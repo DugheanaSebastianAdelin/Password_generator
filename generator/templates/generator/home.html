@@ -1,12 +1,20 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+{% load static%}
 
-<div class="container text-center">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="/static/style.css">
+
+<div class="container">
+
+
+
+
+
 
 
 <h1>Password Generator</h1>
-
-<form action="{% url 'password' %}">
-  <select name="lenght">
+<br>
+<form class="secoundary-btn" action="{% url 'password' %}">
+  <select name="length"class="text-primary">
    <option value="6">6</option>
    <option value="7">7</option>
    <option value="8">8</option>
@@ -16,18 +24,18 @@
    <option value="12"selected="selected">12</option>
    <option value="13">13</option>
    <option value="14">14</option>
-  </select> Lenght
+ </select><span style="color:blue"> Length</span>
 
   <br>
-  <input type="checkbox" name="uppercase""text-center"> Uppercase
+  <input  type="checkbox" name="uppercase"> <b>Uppercase</b>
 
   <br>
-  <input type="checkbox" name="numbers"> Numbers
+  <input type="checkbox" name="numbers"> <b>Numbers</b>
 
 
 
   <br>
-  <input type="checkbox" name="special"> Special Character
+  <input type="checkbox" name="special"> <b>Special Character</b>
 
   <br>
 

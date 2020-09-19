@@ -1,0 +1,15 @@
+body{
+  background-image: url('background.jfif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255,255,255,0.4);
+  background-blend-mode:color-dodge;
+}
+
+.container{
+  padding: 300px;
+}
+.secoundary-btn{
+  padding: 0px 0px 0px 100px;
+
+}

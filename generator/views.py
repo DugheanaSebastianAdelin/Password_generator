@@ -19,7 +19,7 @@ def password(request):
         characters.extend(list('1234567890'))
 
 
-    lenght = int(request.GET.get('lenght',13))
+    lenght = int(request.GET.get('length',13))
     for x in range(lenght):
         thepassword += random.choice(characters)
     return render(request, 'generator/password.html', {'password':thepassword })
